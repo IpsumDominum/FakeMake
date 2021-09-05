@@ -1,9 +1,10 @@
 #FakeMake
 
 ### COMPSCI711 Assignment 4
-
 Student ID : 851640593
 Name : Chenrong Lu
+
+Make, but faster by using a thread pool
 
 ### Run instructions
 Type: fakemake -h for instructions.
