@@ -29,13 +29,25 @@ fakemake -f makefile2
 
 ### Brief Summary Of Implementation
 1.Build dependency 'tree' from parsing makefile
+
+
 2.For each node without dependency, run the command.
+
+
 3.Check if the child of the node(which has just ran)
   has all its parents completed.If so, run it and repeat 3.
+
+
 4.Done.
+
+
 (Serial)
+
 Calls run() function on Node recursively.
+
+
 (Parallel)
+
 Uses a thread pool with a command queue. Initial nodes are
 inserted into command queue. If node is finished processing
 and any of its child is free of dependency, run the child.
