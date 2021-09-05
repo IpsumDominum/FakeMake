@@ -17,6 +17,15 @@ Options:
 -s                       Silence output
 -p                       Profile running time
 ```
+You can make fakemake with make 
+```
+make -f makefile 
+```
+You can then make fakemake with fakemake
+```
+fakemake -f makefile2
+```
+
 
 ### Brief Summary Of Implementation
 1.Build dependency 'tree' from parsing makefile
