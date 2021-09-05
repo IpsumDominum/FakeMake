@@ -62,7 +62,7 @@ Please see test files for some of the errors checked.
 Checks for syntax error, dependency error, circular dependency,etc.
 
 ### Running the tests
-ONLY TESTED ON WINDOWS 8
+ONLY TESTED ON WINDOWS 8.1
 ```Windows CMD
 runTests.bat 
 ```
@@ -70,6 +70,7 @@ runTests.bat
 runTests.sh
 ```
 ### Sample Output (Part of the Test File Output)
+<pre>
 ============TEST1=================
 Running 'fakemake -p -f tests/compileSelf' (Serial Compile Self)
 g++  -std=c++17 -c source/dependencyTree.cpp -o bin/dependencyTree.o
@@ -91,3 +92,4 @@ g++ -std=c++17 -c source/helper.cpp -o bin/helper.o
 g++ -std=c++17 -c source/threadPool.cpp -o bin/threadpool.o
 g++  -std=c++17 bin/main.o bin/dependencyTree.o bin/dependencyNode.o bin/parser.o bin/helper.o bin/threadPool.o -o fakemakeFromfakeMake
 Parallel Command Issueing : Time taken: 4302 Miliseconds
+</pre>
