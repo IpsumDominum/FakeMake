@@ -1,0 +1,10 @@
+final : dep1 dep2 dep3 dep4
+	echo DONE
+dep1 : 
+	echo 1 
+dep2 : 
+	echo 2
+dep3 : 
+	echo 3 
+dep4 : 
+	echo 4

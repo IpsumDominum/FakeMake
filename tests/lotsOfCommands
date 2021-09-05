@@ -1,0 +1,28 @@
+final : dep1 dep2 dep3 dep4 dep5 dep6 dep7 dep8 dep9 dep10 dep11 dep12 dep13
+	echo DONE
+dep1 : dep5 dep6
+	timeout 1 & echo 1
+dep2 : dep3 dep4
+	timeout 1 & echo 2
+dep3 : dep5 dep6
+	timeout 1 & echo 3
+dep4 : dep7
+	timeout 1 & echo 4
+dep5 : dep4 
+	timeout 1 & echo 5
+dep6 : dep8
+	timeout 1 & echo 6
+dep7 : dep8
+	timeout 1 & echo 7
+dep8 : dep9 dep10
+	timeout 1 & echo 8
+dep9 : 
+	timeout 1 & echo 9
+dep10 :
+	timeout 1 & echo 10
+dep11 : 
+	timeout 1 & echo 11
+dep12 : 
+	timeout 1 & echo 12
+dep13 : 
+	timeout 1 & echo 13

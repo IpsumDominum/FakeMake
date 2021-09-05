@@ -1,0 +1,2 @@
+noDep : randomDependencyThatProbablyDontExist.o
+	SomeCommand
